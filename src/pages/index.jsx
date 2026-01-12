@@ -63,7 +63,7 @@ const Home = () => {
                 textDecoration: 'none',
               }}
             >
-              Whitepaper →
+              Whitepaper
             </Link>
           </header>
 
