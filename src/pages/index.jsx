@@ -19,10 +19,10 @@ const Home = () => {
         <meta name="description" content="Universal risk infrastructure built on prediction markets" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300;1,400&family=DM+Mono:wght@400&display=swap" rel="stylesheet" />
       </Head>
-      <style>{`
-        @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap');
-      `}</style>
 
       <div style={{
         display: 'flex',
@@ -44,7 +44,7 @@ const Home = () => {
             alignItems: 'center',
           }}>
             <span style={{
-              fontFamily: "'IBM Plex Mono', monospace",
+              fontFamily: "'DM Sans', sans-serif",
               fontSize: '13px',
               fontWeight: 500,
               letterSpacing: '0.08em',
@@ -56,7 +56,7 @@ const Home = () => {
             <Link 
               href="/whitepaper"
               style={{
-                fontFamily: "'IBM Plex Mono', monospace",
+                fontFamily: "'DM Sans', sans-serif",
                 fontSize: '13px',
                 fontWeight: 500,
                 color: '#999',
@@ -70,7 +70,7 @@ const Home = () => {
           {/* Product name */}
           <div style={{ marginBottom: '48px' }}>
             <h1 style={{
-              fontFamily: "'IBM Plex Mono', monospace",
+              fontFamily: "'DM Sans', sans-serif",
               fontSize: '48px',
               fontWeight: 400,
               color: '#000',
@@ -80,7 +80,7 @@ const Home = () => {
               Gatsby
             </h1>
             <p style={{
-              fontFamily: "'IBM Plex Mono', monospace",
+              fontFamily: "'DM Sans', sans-serif",
               fontSize: '18px',
               color: '#666',
               margin: '12px 0 0 0',
@@ -91,7 +91,7 @@ const Home = () => {
 
           {/* Letter */}
           <div style={{
-            fontFamily: "'IBM Plex Mono', monospace",
+            fontFamily: "'DM Sans', sans-serif",
             fontSize: '17px',
             lineHeight: 1.8,
             color: '#333',
@@ -110,22 +110,15 @@ const Home = () => {
             </h2>
 
             <p style={{ marginTop: 0 }}>
-              Prediction markets will not reach their potential as gambling platforms. 
-              They will succeed by doing what markets do best: <em>allocating risk to 
-              those most willing to bear it</em>.
-            </p>
-
-            <p>
-              Today's prediction markets are trapped in a low-liquidity equilibrium, 
-              dominated by speculators chasing lottery tickets while economically 
-              meaningful events remain illiquid ghost towns. The missing ingredient 
-              isn't better marketing or regulation—it's utility-driven flow.
-            </p>
-
-            <p>
-              Traditional derivatives markets thrive because farmers hedge crops, 
-              airlines hedge fuel, and portfolio managers hedge macro risk. These 
-              participants rationally accept negative expected value for reduced variance. 
+              Prediction markets will not reach their potential as gambling platforms.
+              They will succeed by doing what markets do best: <em>allocating risk to
+              those most willing to bear it</em>. Today's prediction markets are trapped
+              in a low-liquidity equilibrium, dominated by speculators chasing lottery
+              tickets while economically meaningful events remain illiquid ghost towns.
+              The missing ingredient isn't better marketing or regulation—it's utility-driven
+              flow. Traditional derivatives markets thrive because farmers hedge crops,
+              airlines hedge fuel, and portfolio managers hedge macro risk. These
+              participants rationally accept negative expected value for reduced variance.
               Prediction markets lack this entirely.
             </p>
 
@@ -154,10 +147,13 @@ const Home = () => {
             </h2>
 
             <p>
-              <strong>Map portfolios to event risk.</strong> Our system analyzes user 
-              portfolios and decomposes them into underlying risk factors—macroeconomic 
-              shocks, geopolitical events, climate volatility, regulatory changes—then 
-              maps these exposures to live prediction market contracts.
+              <strong>Map portfolios to event risk.</strong> Our system analyzes user
+              portfolios and decomposes them into underlying risk factors—macroeconomic
+              shocks, geopolitical events, climate volatility, regulatory changes.
+            </p>
+
+            <p>
+              These exposures are then mapped to live prediction market contracts.
             </p>
 
             {/* Portfolio Preview - No frame */}
@@ -166,7 +162,7 @@ const Home = () => {
               padding: '24px',
               background: '#fafafa',
               borderRadius: '12px',
-              fontFamily: "'IBM Plex Mono', monospace",
+              fontFamily: "'DM Sans', sans-serif",
             }}>
               {/* Portfolio header */}
               <div style={{ marginBottom: '24px' }}>
@@ -174,7 +170,7 @@ const Home = () => {
                   YOUR PORTFOLIO
                 </div>
                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline' }}>
-                  <span style={{ fontFamily: "'IBM Plex Mono', monospace", fontSize: '32px', fontWeight: 500, color: '#000', letterSpacing: '-0.02em' }}>
+                  <span style={{ fontFamily: "'DM Sans', sans-serif", fontSize: '32px', fontWeight: 500, color: '#000', letterSpacing: '-0.02em' }}>
                     $284,750
                   </span>
                   <span style={{ fontSize: '13px', color: '#22c55e' }}>+$1,247 today</span>
@@ -204,7 +200,7 @@ const Home = () => {
                       fontSize: '10px',
                       fontWeight: 500,
                       color: h.color === '#ddd' || h.color === '#bbb' || h.color === '#aaa' ? '#333' : '#fff',
-                      fontFamily: "'IBM Plex Mono', monospace",
+                      fontFamily: "'DM Sans', sans-serif",
                     }}>
                       {h.pct > 10 ? h.symbol : ''}
                     </div>
@@ -237,7 +233,7 @@ const Home = () => {
                 <div style={{ background: '#fff', border: '1px solid #eee', borderRadius: '8px', overflow: 'hidden', display: 'flex', flexDirection: 'column' }}>
                   <div style={{ padding: '12px 16px', borderBottom: '1px solid #eee', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
                     <span style={{ fontSize: '11px', color: '#999', letterSpacing: '0.05em' }}>RISK EXPOSURE</span>
-                    <span style={{ fontFamily: "'IBM Plex Mono', monospace", fontSize: '13px', color: '#dc2626', fontWeight: 500 }}>-$103K</span>
+                    <span style={{ fontFamily: "'DM Sans', sans-serif", fontSize: '13px', color: '#dc2626', fontWeight: 500 }}>-$103K</span>
                   </div>
                   <div style={{ flex: 1 }}>
                     {[
@@ -248,7 +244,7 @@ const Home = () => {
                     ].map((r, i) => (
                       <div key={i} style={{ padding: '10px 16px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', borderBottom: i < 3 ? '1px solid #f5f5f5' : 'none' }}>
                         <span style={{ fontSize: '13px', color: '#000' }}>{r.name}</span>
-                        <span style={{ fontFamily: "'IBM Plex Mono', monospace", fontSize: '12px', color: '#dc2626' }}>{r.exposure}</span>
+                        <span style={{ fontFamily: "'DM Sans', sans-serif", fontSize: '12px', color: '#dc2626' }}>{r.exposure}</span>
                       </div>
                     ))}
                   </div>
@@ -268,7 +264,7 @@ const Home = () => {
                     ].map((m, i) => (
                       <div key={i} style={{ padding: '10px 16px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', borderBottom: i < 3 ? '1px solid #f5f5f5' : 'none' }}>
                         <span style={{ fontSize: '13px', color: '#000' }}>{m.name}</span>
-                        <span style={{ fontFamily: "'IBM Plex Mono', monospace", fontSize: '12px', color: '#000' }}>{m.odds}</span>
+                        <span style={{ fontFamily: "'DM Sans', sans-serif", fontSize: '12px', color: '#000' }}>{m.odds}</span>
                       </div>
                     ))}
                   </div>
@@ -304,10 +300,13 @@ const Home = () => {
             </p>
 
             <p>
-              <strong>Expand to universal insurance.</strong> Once exposure can be expressed 
-              as tradable events, the same architecture extends to any real-world uncertainty: 
-              homeowners hedge hurricane risk through contracts on wind speed; manufacturers 
-              insure against supply-chain disruptions; households hedge income volatility 
+              <strong>Expand to universal insurance.</strong> Once exposure can be expressed
+              as tradable events, the same architecture extends to any real-world uncertainty.
+            </p>
+
+            <p>
+              Homeowners hedge hurricane risk through contracts on wind speed; manufacturers
+              insure against supply-chain disruptions; households hedge income volatility
               through labor-market indicators.
             </p>
 
@@ -317,7 +316,7 @@ const Home = () => {
               padding: '24px',
               background: '#fafafa',
               borderRadius: '12px',
-              fontFamily: "'IBM Plex Mono', monospace",
+              fontFamily: "'DM Sans', sans-serif",
             }}>
               {/* Business header */}
               <div style={{ marginBottom: '24px' }}>
@@ -328,7 +327,7 @@ const Home = () => {
                   <span style={{ fontSize: '24px', fontWeight: 500, color: '#000', letterSpacing: '-0.02em' }}>
                     Meridian Components
                   </span>
-                  <span style={{ fontFamily: "'IBM Plex Mono', monospace", fontSize: '14px', color: '#666' }}>$84M revenue</span>
+                  <span style={{ fontFamily: "'DM Sans', sans-serif", fontSize: '14px', color: '#666' }}>$84M revenue</span>
                 </div>
                 <div style={{ fontSize: '13px', color: '#999', marginTop: '2px' }}>
                   Electronics Manufacturing · 340 employees
@@ -366,7 +365,7 @@ const Home = () => {
                 <div style={{ background: '#fff', border: '1px solid #eee', borderRadius: '8px', overflow: 'hidden', display: 'flex', flexDirection: 'column' }}>
                   <div style={{ padding: '12px 16px', borderBottom: '1px solid #eee', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
                     <span style={{ fontSize: '11px', color: '#999', letterSpacing: '0.05em' }}>YOUR EXPOSURE</span>
-                    <span style={{ fontFamily: "'IBM Plex Mono', monospace", fontSize: '13px', color: '#dc2626', fontWeight: 500 }}>-$66M</span>
+                    <span style={{ fontFamily: "'DM Sans', sans-serif", fontSize: '13px', color: '#dc2626', fontWeight: 500 }}>-$66M</span>
                   </div>
                   <div style={{ flex: 1 }}>
                     {[
@@ -377,7 +376,7 @@ const Home = () => {
                     ].map((r, i) => (
                       <div key={i} style={{ padding: '10px 16px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', borderBottom: i < 3 ? '1px solid #f5f5f5' : 'none' }}>
                         <span style={{ fontSize: '13px', color: '#000' }}>{r.name}</span>
-                        <span style={{ fontFamily: "'IBM Plex Mono', monospace", fontSize: '12px', color: '#dc2626' }}>{r.exposure}</span>
+                        <span style={{ fontFamily: "'DM Sans', sans-serif", fontSize: '12px', color: '#dc2626' }}>{r.exposure}</span>
                       </div>
                     ))}
                   </div>
@@ -397,7 +396,7 @@ const Home = () => {
                     ].map((m, i) => (
                       <div key={i} style={{ padding: '10px 16px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', borderBottom: i < 3 ? '1px solid #f5f5f5' : 'none' }}>
                         <span style={{ fontSize: '13px', color: '#000' }}>{m.name}</span>
-                        <span style={{ fontFamily: "'IBM Plex Mono', monospace", fontSize: '12px', color: '#000' }}>{m.odds}</span>
+                        <span style={{ fontFamily: "'DM Sans', sans-serif", fontSize: '12px', color: '#000' }}>{m.odds}</span>
                       </div>
                     ))}
                   </div>
@@ -452,7 +451,7 @@ const Home = () => {
             <a 
               href="mailto:team@castlelabs.co"
               style={{
-                fontFamily: "'IBM Plex Mono', monospace",
+                fontFamily: "'DM Sans', sans-serif",
                 fontSize: '13px',
                 color: '#999',
                 textDecoration: 'none',

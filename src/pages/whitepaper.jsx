@@ -19,10 +19,10 @@ const Whitepaper = () => {
         <meta name="description" content="Turning Prediction Markets Into Universal Risk Infrastructure" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300;1,400&family=DM+Mono:wght@400&display=swap" rel="stylesheet" />
       </Head>
-      <style>{`
-        @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap');
-      `}</style>
 
       <div style={{
         display: 'flex',
@@ -44,7 +44,7 @@ const Whitepaper = () => {
             alignItems: 'center',
           }}>
             <span style={{
-              fontFamily: "'IBM Plex Mono', monospace",
+              fontFamily: "'DM Sans', sans-serif",
               fontSize: '13px',
               fontWeight: 500,
               letterSpacing: '0.08em',
@@ -56,7 +56,7 @@ const Whitepaper = () => {
             <Link 
               href="/"
               style={{
-                fontFamily: "'IBM Plex Mono', monospace",
+                fontFamily: "'DM Sans', sans-serif",
                 fontSize: '13px',
                 fontWeight: 500,
                 color: '#999',
@@ -70,7 +70,7 @@ const Whitepaper = () => {
           {/* Title */}
           <div style={{ marginBottom: '48px' }}>
             <h1 style={{
-              fontFamily: "'IBM Plex Mono', monospace",
+              fontFamily: "'DM Sans', sans-serif",
               fontSize: '36px',
               fontWeight: 400,
               color: '#000',
@@ -81,7 +81,7 @@ const Whitepaper = () => {
               Turning Prediction Markets Into Universal Risk Infrastructure
             </h1>
             <p style={{
-              fontFamily: "'IBM Plex Mono', monospace",
+              fontFamily: "'DM Sans', sans-serif",
               fontSize: '15px',
               color: '#999',
               margin: '16px 0 0 0',
@@ -92,7 +92,7 @@ const Whitepaper = () => {
 
           {/* Content */}
           <div style={{
-            fontFamily: "'IBM Plex Mono', monospace",
+            fontFamily: "'DM Sans', sans-serif",
             fontSize: '17px',
             lineHeight: 1.8,
             color: '#333',
@@ -125,14 +125,16 @@ const Whitepaper = () => {
               in financial products and derivatives.
             </p>
             <p>
-              Prediction markets will reach their full potential only when they are understood 
-              primarily as instruments of risk transfer rather than speculation. Hence, we are 
-              constructing a Risk Translation Layer: an AI-driven platform that converts real-world 
-              financial exposure into automated, bundled hedges executed on regulated prediction 
-              markets. By abstracting away the notion of betting and instead delivering insurance-like 
-              protection, the platform introduces the benign, repeatable flow necessary to catalyze 
-              liquidity, attract institutional market makers, and embed prediction markets into 
-              global wealth management.
+              Prediction markets will reach their full potential only when they are understood
+              primarily as instruments of risk transfer rather than speculation.
+            </p>
+            <p>
+              Hence, we are constructing a Risk Translation Layer: an AI-driven platform that
+              converts real-world financial exposure into automated, bundled hedges executed on
+              regulated prediction markets. By abstracting away the notion of betting and instead
+              delivering insurance-like protection, the platform introduces the benign, repeatable
+              flow necessary to catalyze liquidity, attract institutional market makers, and embed
+              prediction markets into global wealth management.
             </p>
             <p>
               Once risk can be expressed, priced, and transferred in this way, the same framework 
@@ -202,13 +204,15 @@ const Whitepaper = () => {
               cannot be traded. In order to solve this, we can learn from traditional financial markets.
             </p>
             <p>
-              The efficiency of financial markets arises not from universal profit maximization but from 
-              heterogeneity in participant utility functions. Many economically significant trades are 
-              made not to exploit mispricing but to reduce variance and control tail risk. Farmers hedge 
-              crop prices to stabilize income, airlines hedge fuel costs to manage operating risk, and 
-              portfolio managers hedge macroeconomic exposure in order to concentrate capital on 
-              idiosyncratic alpha. In each case, participants rationally accept negative expected value 
-              in exchange for higher overall utility.
+              The efficiency of financial markets arises not from universal profit maximization but from
+              heterogeneity in participant utility functions. Many economically significant trades are
+              made not to exploit mispricing but to reduce variance and control tail risk.
+            </p>
+            <p>
+              Farmers hedge crop prices to stabilize income, airlines hedge fuel costs to manage
+              operating risk, and portfolio managers hedge macroeconomic exposure in order to
+              concentrate capital on idiosyncratic alpha. In each case, participants rationally
+              accept negative expected value in exchange for higher overall utility.
             </p>
             <p>
               Prediction markets lack this category of participants. Trading activity is dominated by 
@@ -243,26 +247,33 @@ const Whitepaper = () => {
               4. The Risk Translation Layer
             </h2>
             <p>
-              The proposed platform enables users to hedge by linking three domains: asset holdings, 
-              underlying sources of risk, and event-based contracts. Users begin by connecting their 
-              brokerage accounts, after which the system identifies the exogenous drivers of portfolio 
-              outcomes—macroeconomic, geopolitical, regulatory, technological, and environmental events. 
-              These exposures are then mapped to live prediction market contracts whose outcomes exert 
-              measurable, causal effects on portfolio returns. In this way, portfolio risk is reframed 
+              The proposed platform enables users to hedge by linking three domains: asset holdings,
+              underlying sources of risk, and event-based contracts. Users begin by connecting their
+              brokerage accounts, after which the system identifies the exogenous drivers of portfolio
+              outcomes—macroeconomic, geopolitical, regulatory, technological, and environmental events.
+            </p>
+            <p>
+              These exposures are then mapped to live prediction market contracts whose outcomes exert
+              measurable, causal effects on portfolio returns. In this way, portfolio risk is reframed
               not as an abstract statistical property, but as a set of concrete, tradable event exposures.
             </p>
             <p>
-              An optimization engine then constructs a bundled hedge across relevant contracts, calibrated 
-              to the user's exposure profile and constrained by liquidity, pricing, and cost considerations. 
-              Execution and monitoring are automated, allowing hedges to adjust dynamically as market 
-              conditions evolve, events resolve, and correlations shift. The resulting market structure 
-              supports both risk-averse participants seeking protection and risk-seeking participants 
-              willing to sell that protection, thereby reproducing the two-sided structure that underlies 
-              efficient financial markets. That is, those seeking more upside potential at the expense of 
-              higher variance can simply short the hedging instrument. This enables us to enter the 
-              prediction market space through two angles: risk-conscious investors and thrill-seeking 
-              gamblers. We enable both sides to be more informed about their risks, thus promoting better 
-              decision-making and, ultimately, more efficient markets.
+              An optimization engine then constructs a bundled hedge across relevant contracts, calibrated
+              to the user's exposure profile and constrained by liquidity, pricing, and cost considerations.
+              Execution and monitoring are automated, allowing hedges to adjust dynamically as market
+              conditions evolve, events resolve, and correlations shift.
+            </p>
+            <p>
+              The resulting market structure supports both risk-averse participants seeking protection
+              and risk-seeking participants willing to sell that protection, thereby reproducing the
+              two-sided structure that underlies efficient financial markets. That is, those seeking
+              more upside potential at the expense of higher variance can simply short the hedging
+              instrument.
+            </p>
+            <p>
+              This enables us to enter the prediction market space through two angles: risk-conscious
+              investors and thrill-seeking gamblers. We enable both sides to be more informed about
+              their risks, thus promoting better decision-making and, ultimately, more efficient markets.
             </p>
 
             {/* Section 5 */}
@@ -277,24 +288,30 @@ const Whitepaper = () => {
               5. From Wealth Management to Universal Insurance
             </h2>
             <p>
-              Portfolio hedging represents an initial distribution wedge rather than the ultimate scope 
-              of the Risk Translation Layer. Once exposure can be expressed in terms of exogenous events 
-              and transferred through event-based contracts, the same architecture extends naturally 
-              beyond financial portfolios to real-world sources of uncertainty. A homeowner in Florida 
-              can hedge hurricane risk through contracts that settle on measured wind speeds or storm 
-              intensity. A manufacturer can insure against supply-chain disruptions by protecting against 
-              port closures, shipping delays, or commodity price shocks. A household can hedge income risk 
-              through labor-market and macroeconomic indicators tied to layoffs, unemployment, or policy outcomes.
+              Portfolio hedging represents an initial distribution wedge rather than the ultimate scope
+              of the Risk Translation Layer. Once exposure can be expressed in terms of exogenous events
+              and transferred through event-based contracts, the same architecture extends naturally
+              beyond financial portfolios to real-world sources of uncertainty.
             </p>
             <p>
-              In each case, protection is delivered through transparent, market-priced contracts that 
-              settle on objective events—without underwriting, claims adjustment, or opaque intermediaries. 
-              What emerges is not a collection of niche hedges, but a general-purpose, parametric insurance 
-              layer built on prediction markets. The same mechanisms that translate portfolios into hedges, 
-              including risk identification, contract discovery, optimization, and execution, also translate 
-              real-world exposures into insurable risks. The underlying machinery remains unchanged; only 
-              the domain of risk to which it is applied expands, allowing users to insure against the 
-              specific uncertainties that shape their lives and livelihoods.
+              A homeowner in Florida can hedge hurricane risk through contracts that settle on measured
+              wind speeds or storm intensity. A manufacturer can insure against supply-chain disruptions
+              by protecting against port closures, shipping delays, or commodity price shocks. A household
+              can hedge income risk through labor-market and macroeconomic indicators tied to layoffs,
+              unemployment, or policy outcomes.
+            </p>
+            <p>
+              In each case, protection is delivered through transparent, market-priced contracts that
+              settle on objective events—without underwriting, claims adjustment, or opaque intermediaries.
+              What emerges is not a collection of niche hedges, but a general-purpose, parametric insurance
+              layer built on prediction markets.
+            </p>
+            <p>
+              The same mechanisms that translate portfolios into hedges—risk identification, contract
+              discovery, optimization, and execution—also translate real-world exposures into insurable
+              risks. The underlying machinery remains unchanged; only the domain of risk to which it is
+              applied expands, allowing users to insure against the specific uncertainties that shape
+              their lives and livelihoods.
             </p>
 
             {/* Section 6 */}
@@ -309,14 +326,16 @@ const Whitepaper = () => {
               6. Liquidity and Market Structure
             </h2>
             <p>
-              The proposed platform functions as a distribution engine rather than an exchange. By routing 
-              utility-driven hedging flow into prediction markets, it introduces benign order flow that 
-              reduces market maker risk—not because hedgers are altruists, but because their incentives 
-              are orthogonal to those dominating prediction markets today. As liquidity deepens and spreads 
-              tighten, hedging becomes cheaper and more effective, reinforcing demand and completing a 
-              positive feedback loop. In this manner, the platform aligns the incentives of hedgers, 
-              speculators, market makers, and venues, establishing a reliable base of benign volume that 
-              can start the liquidity flywheel.
+              The proposed platform functions as a distribution engine rather than an exchange. By routing
+              utility-driven hedging flow into prediction markets, it introduces benign order flow that
+              reduces market maker risk—not because hedgers are altruists, but because their incentives
+              are orthogonal to those dominating prediction markets today.
+            </p>
+            <p>
+              As liquidity deepens and spreads tighten, hedging becomes cheaper and more effective,
+              reinforcing demand and completing a positive feedback loop. In this manner, the platform
+              aligns the incentives of hedgers, speculators, market makers, and venues, establishing a
+              reliable base of benign volume that can start the liquidity flywheel.
             </p>
 
             {/* Section 7 */}
@@ -370,7 +389,7 @@ const Whitepaper = () => {
             <a 
               href="mailto:team@castlelabs.co"
               style={{
-                fontFamily: "'IBM Plex Mono', monospace",
+                fontFamily: "'DM Sans', sans-serif",
                 fontSize: '13px',
                 color: '#999',
                 textDecoration: 'none',
@@ -379,7 +398,7 @@ const Whitepaper = () => {
               team@castlelabs.co
             </a>
             <span style={{
-              fontFamily: "'IBM Plex Mono', monospace",
+              fontFamily: "'DM Sans', sans-serif",
               fontSize: '13px',
               color: '#999',
             }}>
